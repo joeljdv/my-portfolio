@@ -11,6 +11,7 @@ import {
   Route,
   Routes,
   BrowserRouter,
+  HashRouter,
 } from "react-router-dom";
 
 import Home from "./components/Home.js";
@@ -19,30 +20,39 @@ import Work from "./components/Work.js";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <div className="socialMedia">
-        <Container>
-          <a
-            href="https://linkedin.com/in/joel-diaz-vidal"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="https://github.com/joeljdv" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </Container>
+    console.log(window.location),
+    (
+      <div>
+        <HashRouter>
+          <Navbar />
+          <div className="socialMedia">
+            <Container>
+              <a
+                href="https://linkedin.com/in/joel-diaz-vidal"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+              <a
+                href="https://github.com/joeljdv"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            </Container>
+          </div>
+          <div className="pages">
+            <Routes>
+              <Route path="/portfolio" element={<Home />} />
+              <Route path="/portfolio/about" element={<About />} />
+              <Route path="/portfolio/work" element={<Work />} />
+            </Routes>
+          </div>
+        </HashRouter>
       </div>
-      <div className="pages">
-        <Routes>
-          <Route path="/portfolio" exact element={<Home />} />
-          <Route path="/portfolio/about" exact element={<About />} />
-          <Route path="/portfolio/work" exact element={<Work />} />
-        </Routes>
-      </div>
-    </div>
+    )
   );
 }
 

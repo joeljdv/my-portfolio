@@ -6,6 +6,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./Navbar";
 import {
   BrowserRouter as Router,
+  HashRouter,
   Redirect,
   Route,
   Routes,

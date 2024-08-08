@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.0b258258.css",
+    "main.js": "/my-portfolio/static/js/main.943dfcaf.js",
+    "static/js/453.1407b060.chunk.js": "/my-portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/Joel_diaz.png": "/my-portfolio/static/media/Joel_diaz.ae9b07220bffd80beba4.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.0b258258.css.map": "/my-portfolio/static/css/main.0b258258.css.map",
+    "main.943dfcaf.js.map": "/my-portfolio/static/js/main.943dfcaf.js.map",
+    "453.1407b060.chunk.js.map": "/my-portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b258258.css",
+    "static/js/main.943dfcaf.js"
+  ]
+}

@@ -1,38 +1,144 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    176deg,
+    rgba(55, 46, 198, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(2, 28, 33, 1) 100%
+  );
+  height: 100vh;
+}
+
+.pages {
+  margin: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav {
+  /* background-color: gray; */
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav li:hover {
+  font-size: x-large;
+}
+
+.container {
+  margin-left: 15px;
+  width: 150px;
+  height: 5rem;
+}
+.container a {
+  color: white;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.container a:hover {
+  font-size: 2.5rem;
+}
+
+.Home {
+  color: white;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.Home img {
+  height: 250px;
+  width: 300px;
+}
+
+.Home h1 {
+  font-size: 60px;
+  width: 200px;
+}
+
+.Home p {
+  text-align: left;
+  width: 350px;
+  font-size: 20px;
+}
+
+.Home-Right-column {
+  margin-left: 100px;
+  width: 50%;
+}
+
+.Home-Left-column {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.About {
+  color: white;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.About h1 {
+  font-size: 40px;
+  width: 200px;
+}
+
+.About-Right-column {
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 30%;
+}
+
+.About-Left-column {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.Work {
+  color: white;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.Work-Left-column {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.Work-Right-column {
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 30%;
 }

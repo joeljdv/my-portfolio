@@ -6,7 +6,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./Navbar";
 import {
   BrowserRouter as Router,
-  HashRouter,
+  Switch,
   Redirect,
   Route,
   Routes,
@@ -36,13 +36,11 @@ function App() {
         </Container>
       </div>
       <div className="pages">
-        <BrowserRouter>
-          <Routes>
-            <Route path="/portfolio" exact element={<Home />} />
-            <Route path="/portfolio/about" exact element={<About />} />
-            <Route path="/portfolio/work" exact element={<Work />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/portfolio" exact element={<Home />} />
+          <Route path="/portfolio/about" exact element={<About />} />
+          <Route path="/portfolio/work" exact element={<Work />} />
+        </Routes>
       </div>
     </div>
   );

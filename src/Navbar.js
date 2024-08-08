@@ -6,10 +6,10 @@ export default function Navbar() {
       </a>
       <ul>
         <li>
-          <a href="#/portfolio/about"> About </a>
+          <a href="/portfolio/about"> About </a>
         </li>
         <li>
-          <a href="#/portfolio/work"> Work </a>
+          <a href="/portfolio/work"> Work </a>
         </li>
         <li>
           <a href="Resume.pdf" download="Resume.pdf" target="">

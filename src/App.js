@@ -38,8 +38,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/portfolio" exact element={<Home />} />
-            <Route path="/about" exact element={<About />} />
-            <Route path="work" exact element={<Work />} />
+            <Route path="/portfolio/about" exact element={<About />} />
+            <Route path="/portfolio/work" exact element={<Work />} />
           </Routes>
         </BrowserRouter>
       </div>
